@@ -31,7 +31,7 @@ a {
 
 .content-top {
     background-color: #F1E4E6;
-    gap: 63px;
+    gap: 60px;
     display: flex;
     align-items: center;
     padding-left: calc(50% - 1600px/2);
@@ -97,7 +97,7 @@ h1 {
 }
 
 .content-offer-card {
-    position: relative; 
+    position: relative;
     z-index: -1;
     display: flex;
     justify-content: center;
@@ -112,7 +112,7 @@ h1 {
     z-index: 0;
     z-index: 0;
     width: 100%;
-    
+
 }
 
 .offer-card-text {
@@ -164,7 +164,7 @@ p {
 
 .featured-items-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 360px);
+    grid-template-columns: repeat(3, 360px);
     /* можно использовать (3, 1fr) или (3, 360px) */
     /* авто фит автоматически подстраивает кол-во колонко под ширину страницы */
     /* grid-template-rows: repeat(2, 1fr); */
@@ -242,4 +242,47 @@ h3 {
     width: 212px;
     height: 48px;
     background-color: #fff;
+}
+
+@media (max-width: 1024px) and (min-width:768px) {
+
+    .nav {
+        height: 74px;
+    }
+
+    .center {
+        padding-left: calc(50% - 735px/2);
+        padding-right: calc(50% - 735px/2);
+    }
+
+    .content-top {
+        gap: 39px;
+    }
+
+    .h1 {
+        font-size: 44px;
+    }
+
+    .content-top-h2 {
+        font-size: 24px;
+    }
+
+    .content-offer {
+        padding-bottom: 110px;
+        gap: 20px;
+        grid-template-columns: repeat(2, 233px);
+        /* в колонках можно указать и 1 фракцию, но 360 пикселей ширина картинок, в пикселях тоже правильно */
+        grid-template-rows: 168px 116px;
+        /*  тут указана высота верхнего ряда, и нижнего */
+    }
+
+    .featured-items {
+        gap: 4px;
+        padding-bottom: 74px;
+    }
+
+    .featured-items-grid {
+        padding-bottom: 32px;
+        grid-template-columns: repeat(2, 360px);        
+    }
 }
