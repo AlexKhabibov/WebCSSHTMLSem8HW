@@ -212,6 +212,10 @@ h3 {
     align-items: center;
 }
 
+.img-grid:hover {
+    background-color: rgba(58, 56, 56, 0.86);
+}
+
 .img2layer {
     background-color: #F7E4E2;
     width: 360px;
