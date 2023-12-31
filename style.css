@@ -39,9 +39,12 @@ a {
 }
 
 .content-top-right-text {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F;
+}
+
+.content-left-img {
+    width: 50%
 }
 
 h1 {
@@ -212,8 +215,8 @@ h3 {
     align-items: center;
 }
 
-.img-grid:hover {
-    background-color: rgba(58, 56, 56, 0.86);
+.offer-card-img:hover {
+
 }
 
 .img2layer {
@@ -248,7 +251,12 @@ h3 {
     background-color: #fff;
 }
 
-@media (max-width: 1024px) and (min-width:768px) {
+.button-brows:hover {
+    background-color: #F16D7F;
+    color: #FFF;
+}
+
+@media (max-width: 1024px) {
 
     .nav {
         height: 74px;
@@ -287,6 +295,6 @@ h3 {
 
     .featured-items-grid {
         padding-bottom: 32px;
-        grid-template-columns: repeat(2, 360px);        
+        grid-template-columns: repeat(2, 360px);
     }
 }
