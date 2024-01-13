@@ -215,9 +215,7 @@ h3 {
     align-items: center;
 }
 
-.offer-card-img:hover {
-
-}
+.offer-card-img:hover {}
 
 .img2layer {
     background-color: #F7E4E2;
@@ -296,5 +294,69 @@ h3 {
     .featured-items-grid {
         padding-bottom: 32px;
         grid-template-columns: repeat(2, 360px);
+        gap: 14;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .nav-right--icon2 {
+        display: none;
+    }
+
+    .nav-right--icon1 {
+        display: none;
+    }
+
+    .content-left-img {
+        display: none;
+    }
+
+    .h1 {
+        font-size: 38px;
+    }
+
+    .content-top-h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .content-top {
+        display: flex;
+        justify-content: center;
+        height: 363px;
+    }
+
+    .content-top-right-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-offer {
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 64px;
+    }
+
+    .content-offer-card {
+        width: 343px;
+        height: 247px;
+    }
+
+    .featured-items {
+        padding-bottom: 65px;
+    }
+
+    .featured-items-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+        padding-bottom: 41px;
+    }
+
+    .item {
+        width: 359px;
     }
 }
